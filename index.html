@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>/* one domain: retired *.tekivex.com hosts forward to www.tekivex.com/<app>/ */(function(h,p){if(/\.tekivex\.com$/.test(h)&&h!=='www.tekivex.com'){var m={'ui.tekivex.com':'/ui','griddata.tekivex.com':'/gridstorm','analytics.tekivex.com':'/analytics','dataflow.tekivex.com':'/dataflow'};location.replace('https://www.tekivex.com'+(m[h]||'')+p+location.search+location.hash)}})(location.hostname,location.pathname)</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary Meta ──────────────────────────────────────────────────── -->
+  <title>GridStorm — Open-Source Enterprise Data Grid Platform</title>
+  <meta name="description" content="GridStorm is an open-source enterprise data grid platform: high-performance virtual scrolling, 40+ composable plugins, PDF Toolkit, and Analytics Studio." />
+  <meta name="keywords" content="enterprise data grid, open source data grid, react data grid, virtual scrolling, GridStorm, PDF toolkit, analytics, open source enterprise" />
+  <meta name="author" content="GridStorm" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://gridstorm.tekivex.com/" />
+
+  <!-- ── Search Engine Verification ─────────────────────────────────────── -->
+  <!-- These tokens prove ownership of gridstorm.tekivex.com to the search
+       engines listed below. Required because each console reads the live HTML
+       and matches against the token registered in their dashboard. They are
+       intentionally PUBLIC and safe to commit — anyone seeing them can only
+       confirm ownership of the property, not gain any access to the account.
+       The verification crawlers do NOT execute JS, so the meta tags must live
+       in this initial HTML, not be injected at runtime via useSeo. -->
+  <meta name="google-site-verification" content="iJGXqeB5Lxtpbl6GP-wcDDNHViHyKCE7WTeu08E4F7Y" />
+  <meta name="msvalidate.01" content="15ACD6CF5E1FCB9BA9E115BA8C0B6BD8" />
+
+  <!-- ── Open Graph ─────────────────────────────────────────────────────── -->
+  <!-- og:image cache-buster (?v=20260528): social platforms (WhatsApp,
+       Facebook, LinkedIn, Slack) cache by exact URL. If they previously
+       cached a 404 or broken-preview state, changing the URL forces a
+       fresh fetch on the next share. Bump this date whenever the OG image
+       content changes. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GridStorm" />
+  <meta property="og:title" content="GridStorm — Open-Source Enterprise Data Grid Platform" />
+  <meta property="og:description" content="Open-source enterprise data grid with virtual scrolling, 40+ plugins, PDF Toolkit, and Analytics Studio." />
+  <meta property="og:image" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+  <meta property="og:image:secure_url" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="GridStorm — Open-source enterprise data grid with 40+ plugins, virtual scrolling, and WCAG 2.1 AA accessibility" />
+  <meta property="og:url" content="https://gridstorm.tekivex.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ── Twitter Card (Twitter/X reads og:* fallthrough but explicit tags win) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tekivex" />
+  <meta name="twitter:creator" content="@tekivex" />
+  <meta name="twitter:title" content="GridStorm — Open-Source Enterprise Data Grid Platform" />
+  <meta name="twitter:description" content="High-performance data grid, WASM PDF Toolkit, Analytics Studio — open source, zero per-seat cost." />
+  <meta name="twitter:image" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+  <meta name="twitter:image:alt" content="GridStorm — Open-source enterprise data grid with 40+ plugins, virtual scrolling, and WCAG 2.1 AA accessibility" />
+
+  <!-- ── Icons & Manifest ───────────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/gridstorm/icon.svg" />
+  <link rel="apple-touch-icon" href="/gridstorm/icon.svg" />
+  <link rel="manifest" href="/gridstorm/site.webmanifest" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C65SFGKM00"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C65SFGKM00');
+    // Track hash-router navigation (SPA page views)
+    window.addEventListener('hashchange', function() {
+      gtag('event', 'page_view', {
+        page_path: window.location.hash.replace('#', '') || '/'
+      });
+    });
+  </script>
+
+  <!-- ── Fonts ──────────────────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Load the font stylesheet asynchronously so it doesn't block first render;
+       display=swap keeps text visible while Inter loads. -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </noscript>
+
+  <!-- ── JSON-LD: Organization ──────────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GridStorm",
+    "alternateName": "Tekivex GridStorm",
+    "url": "https://gridstorm.tekivex.com",
+    "logo": "https://gridstorm.tekivex.com/logo.svg",
+    "description": "GridStorm builds open-source enterprise developer tools including a high-performance data grid, PDF Toolkit, and Analytics Studio.",
+    "sameAs": [
+      "https://github.com/007krcs/grid-data",
+      "https://www.npmjs.com/org/gridstorm",
+      "https://www.linkedin.com/company/gridstorm",
+      "https://twitter.com/tekivex"
+    ],
+    "foundingDate": "2024",
+    "knowsAbout": [
+      "Data Grids",
+      "Virtual Scrolling",
+      "PDF Processing",
+      "Analytics",
+      "Enterprise Software",
+      "Web Components",
+      "TypeScript",
+      "React",
+      "Vue",
+      "Angular",
+      "Svelte"
+    ]
+  }
+  </script>
+
+  <!-- ── JSON-LD: WebSite ───────────────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GridStorm",
+    "url": "https://gridstorm.tekivex.com",
+    "description": "Open-source enterprise data grid platform — GridStorm, PDF Toolkit, Analytics Studio.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GridStorm"
+    }
+  }
+  </script>
+
+  <!-- ── JSON-LD: GridStorm SoftwareApplication ───────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GridStorm",
+    "alternateName": "@gridstorm/core",
+    "description": "Open-source enterprise data grid with virtual scrolling (100K rows @ 60fps), WCAG 2.1 AA accessibility, 42 Excel formula functions, and 40+ composable plugins.",
+    "url": "https://gridstorm.tekivex.com/#/product/gridstorm",
+    "downloadUrl": "https://www.npmjs.com/package/@gridstorm/core",
+    "codeRepository": "https://github.com/007krcs/grid-data",
+    "programmingLanguage": "TypeScript",
+    "runtimePlatform": ["Node.js", "Browser"],
+    "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "Data Grid Library",
+    "operatingSystem": "All",
+    "softwareRequirements": "TypeScript 5+, Node.js 18+ (build only), modern browsers (Chrome, Firefox, Safari, Edge)",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GridStorm",
+      "url": "https://gridstorm.tekivex.com"
+    },
+    "featureList": [
+      "Virtual scrolling — 100K+ rows at 60fps",
+      "WCAG 2.1 AA accessibility",
+      "42 Excel-compatible formula functions",
+      "Excel copy/paste with type coercion",
+      "40+ composable plugins",
+      "Framework-agnostic (React, Vue, Svelte, Angular)",
+      "Plugin-first architecture with command/event bus",
+      "Server-side row model (SSRM)",
+      "Real-time streaming with cell-flash direction tracking",
+      "Conditional formatting (18 condition types)",
+      "Row grouping, aggregation, pivoting",
+      "Master-detail and tree data",
+      "Excel and PDF export with row/cell ceilings",
+      "MIT-licensed core, optional Pro plugins"
+    ],
+    "softwareVersion": "0.2.1",
+    "license": "https://opensource.org/licenses/MIT",
+    "isAccessibleForFree": true,
+    "keywords": "data grid, react data grid, virtual scrolling, enterprise grid, AG Grid alternative, TanStack Table alternative, MUI DataGrid alternative, headless grid, plugin-first, WCAG 2.1 AA, Excel copy paste, formula engine"
+  }
+  </script>
+  <script type="module" crossorigin src="/gridstorm/hub-assets/index-Q0unVetu.js"></script>
+  <link rel="stylesheet" crossorigin href="/gridstorm/hub-assets/index-BnuQgSBr.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "GridStorm",
+  "short_name": "GridStorm",
+  "description": "Open-source enterprise data grid — virtual scrolling, 40+ plugins, PDF Toolkit, Analytics Studio. MIT-licensed.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "developer", "productivity"],
+  "screenshots": [
+    {
+      "src": "/og-gridstorm.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "GridStorm — Open-Source Enterprise Data Grid"
+    }
+  ]
+}

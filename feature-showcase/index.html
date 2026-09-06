@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>/* one domain: retired *.tekivex.com hosts forward to www.tekivex.com/<app>/ */(function(h,p){if(/\.tekivex\.com$/.test(h)&&h!=='www.tekivex.com'){var m={'ui.tekivex.com':'/ui','griddata.tekivex.com':'/gridstorm','analytics.tekivex.com':'/analytics','dataflow.tekivex.com':'/dataflow'};location.replace('https://www.tekivex.com'+(m[h]||'')+p+location.search+location.hash)}})(location.hostname,location.pathname)</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C65SFGKM00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C65SFGKM00');
+      window.addEventListener('hashchange', function() {
+        gtag('event', 'page_view', { page_path: window.location.hash.replace('#', '') || '/' });
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse all 40+ GridStorm plugins with interactive demos: sorting, filtering, grouping, aggregation, pivoting, master-detail, tree data, row pinning, conditional formatting, AI query, and more. MIT-licensed." />
+    <meta name="keywords" content="GridStorm plugins, data grid features, sorting filtering grouping, pivot table grid, tree data grid, conditional formatting grid, data grid plugins showcase" />
+    <meta name="author" content="Tekivex" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://gridstorm.tekivex.com/feature-showcase/" />
+    <title>GridStorm Feature Showcase — 40+ Interactive Plugin Demos</title>
+    <!-- Open Graph — cache-busted (?v=20260528) to defeat any prior cached
+         "no preview" state on social platforms. Bump when the image changes. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GridStorm" />
+    <meta property="og:title" content="GridStorm Feature Showcase — 40+ Interactive Plugin Demos" />
+    <meta property="og:description" content="Browse all 40+ GridStorm plugins with interactive demos: sorting, filtering, grouping, aggregation, pivoting, master-detail, tree data, row pinning, conditional formatting, AI query, and more. MIT-licensed." />
+    <meta property="og:url" content="https://gridstorm.tekivex.com/feature-showcase/" />
+    <meta property="og:image" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+    <meta property="og:image:secure_url" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="GridStorm Feature Showcase — 40+ interactive plugin demos with live code examples" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tekivex" />
+    <meta name="twitter:creator" content="@tekivex" />
+    <meta name="twitter:title" content="GridStorm Feature Showcase — 40+ Interactive Plugin Demos" />
+    <meta name="twitter:description" content="Browse all 40+ GridStorm plugins with interactive demos: sorting, filtering, grouping, aggregation, pivoting, master-detail, tree data, row pinning, conditional formatting, AI query, and more. MIT-licensed." />
+    <meta name="twitter:image" content="https://gridstorm.tekivex.com/og-gridstorm.png?v=20260528-cta" />
+    <meta name="twitter:image:alt" content="GridStorm Feature Showcase — 40+ interactive plugin demos with live code examples" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      #root { height: 100vh; display: flex; flex-direction: column; }
+      /* Show sidebar backdrop on mobile */
+      @media (max-width: 767px) {
+        .sidebar-backdrop { display: block !important; }
+      }
+    </style>
+  
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GridStorm Feature Showcase",
+    "description": "Browse all 40+ GridStorm plugins with live interactive demos — sorting, filtering, grouping, aggregation, pivoting, master-detail, tree data, AI query, and more.",
+    "url": "https://gridstorm.tekivex.com/feature-showcase/",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GridStorm",
+      "url": "https://gridstorm.tekivex.com"
+    },
+    "featureList": ["40+ interactive plugin demos", "Sorting and multi-column filtering", "Grouping and aggregation", "Master-detail and tree data", "AI natural-language query", "Conditional formatting"],
+    "softwareVersion": "0.2.1",
+    "license": "https://opensource.org/licenses/MIT",
+    "isPartOf": {
+      "@type": "SoftwareApplication",
+      "name": "GridStorm Platform",
+      "url": "https://gridstorm.tekivex.com"
+    }
+  }
+  </script>
+    <script type="module" crossorigin src="/gridstorm/feature-showcase/assets/index-BXAyyI7t.js"></script>
+    <link rel="stylesheet" crossorigin href="/gridstorm/feature-showcase/assets/index-BqheWuVp.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
