@@ -60,7 +60,7 @@ jobs:
           cp -r storybook-static-react/* public/react/
 
       - name: Upload artifact (always)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: storybook-site
           path: public
